@@ -1,5 +1,5 @@
 //
-//  VCFavorites.swift
+//  VCDetailMovs.swift
 //  Movs-Test
 //
 //  Created by Jose David Bustos H on 04-04-19.
@@ -8,12 +8,12 @@
 
 import Foundation
 import UIKit
-class VCFavorites: UIViewController {
+
+class VCDetailMovs: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        GoLoadCoreData()
+        GoToLoadData()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -21,17 +21,13 @@ class VCFavorites: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func BtnRemover(_ sender: Any) {
-    }
-    func GoLoadCoreData()
+    func GoToLoadData()
     {
         
     }
-   func GoToRemover()
-   {
-    
-     GoLoadCoreData()
-   }
+    func GoToActionFavorite()
+    {
+        
+    }
     
 }
