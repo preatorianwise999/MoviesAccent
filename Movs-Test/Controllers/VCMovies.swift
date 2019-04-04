@@ -1,5 +1,5 @@
 //
-//  VCFavorites.swift
+//  VCMovies.swift
 //  Movs-Test
 //
 //  Created by Jose David Bustos H on 04-04-19.
@@ -8,9 +8,8 @@
 
 import Foundation
 import UIKit
-class VCFavorites: UIViewController {
+class VCMovies: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,10 +20,5 @@ class VCFavorites: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func BtnRemover(_ sender: Any) {
-    }
-   func GoToRemover()
-   {
     
-   }
 }
