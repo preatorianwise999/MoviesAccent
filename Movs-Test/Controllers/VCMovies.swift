@@ -8,7 +8,9 @@
 
 import Foundation
 import UIKit
-class VCMovies: UIViewController {
+class VCMovies: UIViewController , UICollectionViewDataSource, UICollectionViewDelegate{
+    
+    let array:[String] = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,20 @@ class VCMovies: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Number of views
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return array.count
+    }
+    
+    //Populate view
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! myCell
+        cell.imageViewMov.image = UIImage(named: array[indexPath.row] + ".jpg")
+        return cell
+    }
+
     func GoToLoadMovies()
     {
         

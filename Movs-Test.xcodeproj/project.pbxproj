@@ -20,6 +20,17 @@
 		5711208A2255B73F008EAE66 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120892255B73F008EAE66 /* Results.swift */; };
 		5711208C2256A7C8008EAE66 /* VCMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711208B2256A7C8008EAE66 /* VCMovies.swift */; };
 		5711208E2256ADA7008EAE66 /* VCDetailMovs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711208D2256ADA7008EAE66 /* VCDetailMovs.swift */; };
+		5711209A2256CA45008EAE66 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120902256CA43008EAE66 /* 5.jpg */; };
+		5711209B2256CA45008EAE66 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120912256CA44008EAE66 /* 4.jpg */; };
+		5711209C2256CA45008EAE66 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120922256CA44008EAE66 /* 3.jpg */; };
+		5711209D2256CA45008EAE66 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120932256CA44008EAE66 /* 7.jpg */; };
+		5711209E2256CA45008EAE66 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120942256CA44008EAE66 /* 6.jpg */; };
+		5711209F2256CA45008EAE66 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120952256CA44008EAE66 /* 1.jpg */; };
+		571120A02256CA45008EAE66 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120962256CA44008EAE66 /* 8.jpg */; };
+		571120A12256CA45008EAE66 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120972256CA44008EAE66 /* 9.jpg */; };
+		571120A22256CA45008EAE66 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120982256CA45008EAE66 /* 2.jpg */; };
+		571120A32256CA45008EAE66 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120992256CA45008EAE66 /* 10.jpg */; };
+		571120A52256CE6A008EAE66 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120A42256CE6A008EAE66 /* myCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +70,17 @@
 		571120892255B73F008EAE66 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		5711208B2256A7C8008EAE66 /* VCMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMovies.swift; sourceTree = "<group>"; };
 		5711208D2256ADA7008EAE66 /* VCDetailMovs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetailMovs.swift; sourceTree = "<group>"; };
+		571120902256CA43008EAE66 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		571120912256CA44008EAE66 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		571120922256CA44008EAE66 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		571120932256CA44008EAE66 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		571120942256CA44008EAE66 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		571120952256CA44008EAE66 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		571120962256CA44008EAE66 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		571120972256CA44008EAE66 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		571120982256CA45008EAE66 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		571120992256CA45008EAE66 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		571120A42256CE6A008EAE66 /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +131,7 @@
 		5711204E2255706D008EAE66 /* Movs-Test */ = {
 			isa = PBXGroup;
 			children = (
+				5711208F2256C8B8008EAE66 /* pictures */,
 				571120822255B4A3008EAE66 /* Models */,
 				571120812255B488008EAE66 /* Controllers */,
 				571120802255B47B008EAE66 /* Provider */,
@@ -154,6 +177,7 @@
 				571120852255B552008EAE66 /* VCFavorites.swift */,
 				5711208B2256A7C8008EAE66 /* VCMovies.swift */,
 				5711208D2256ADA7008EAE66 /* VCDetailMovs.swift */,
+				571120A42256CE6A008EAE66 /* myCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,6 +189,23 @@
 				571120892255B73F008EAE66 /* Results.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5711208F2256C8B8008EAE66 /* pictures */ = {
+			isa = PBXGroup;
+			children = (
+				571120952256CA44008EAE66 /* 1.jpg */,
+				571120982256CA45008EAE66 /* 2.jpg */,
+				571120922256CA44008EAE66 /* 3.jpg */,
+				571120912256CA44008EAE66 /* 4.jpg */,
+				571120902256CA43008EAE66 /* 5.jpg */,
+				571120942256CA44008EAE66 /* 6.jpg */,
+				571120932256CA44008EAE66 /* 7.jpg */,
+				571120962256CA44008EAE66 /* 8.jpg */,
+				571120972256CA44008EAE66 /* 9.jpg */,
+				571120992256CA45008EAE66 /* 10.jpg */,
+			);
+			path = pictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +312,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571120A32256CA45008EAE66 /* 10.jpg in Resources */,
+				571120A12256CA45008EAE66 /* 9.jpg in Resources */,
+				571120A02256CA45008EAE66 /* 8.jpg in Resources */,
 				5711205D22557070008EAE66 /* LaunchScreen.storyboard in Resources */,
+				5711209A2256CA45008EAE66 /* 5.jpg in Resources */,
+				5711209E2256CA45008EAE66 /* 6.jpg in Resources */,
 				5711205A22557070008EAE66 /* Assets.xcassets in Resources */,
+				571120A22256CA45008EAE66 /* 2.jpg in Resources */,
+				5711209D2256CA45008EAE66 /* 7.jpg in Resources */,
+				5711209C2256CA45008EAE66 /* 3.jpg in Resources */,
+				5711209F2256CA45008EAE66 /* 1.jpg in Resources */,
+				5711209B2256CA45008EAE66 /* 4.jpg in Resources */,
 				571120552255706D008EAE66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5711208C2256A7C8008EAE66 /* VCMovies.swift in Sources */,
+				571120A52256CE6A008EAE66 /* myCell.swift in Sources */,
 				5711208A2255B73F008EAE66 /* Results.swift in Sources */,
 				571120882255B6DD008EAE66 /* Movies.swift in Sources */,
 				571120862255B552008EAE66 /* VCFavorites.swift in Sources */,

@@ -23,6 +23,7 @@ class VCFavorites: UIViewController {
     }
     
     @IBAction func BtnRemover(_ sender: Any) {
+        
     }
     func GoLoadCoreData()
     {
