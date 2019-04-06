@@ -33,6 +33,7 @@
 		571120A52256CE6A008EAE66 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120A42256CE6A008EAE66 /* myCell.swift */; };
 		571120A72257915A008EAE66 /* MovFavoriteCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120A62257915A008EAE66 /* MovFavoriteCore.swift */; };
 		571120AA2257F245008EAE66 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120A92257F245008EAE66 /* TableViewCell.swift */; };
+		571120AD22592D34008EAE66 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120AC22592D34008EAE66 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		571120A42256CE6A008EAE66 /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
 		571120A62257915A008EAE66 /* MovFavoriteCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovFavoriteCore.swift; sourceTree = "<group>"; };
 		571120A92257F245008EAE66 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		571120AC22592D34008EAE66 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				571120872255B6DD008EAE66 /* Movies.swift */,
 				571120892255B73F008EAE66 /* Results.swift */,
 				571120A62257915A008EAE66 /* MovFavoriteCore.swift */,
+				571120AC22592D34008EAE66 /* CoreDataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				571120882255B6DD008EAE66 /* Movies.swift in Sources */,
 				571120862255B552008EAE66 /* VCFavorites.swift in Sources */,
 				571120522255706D008EAE66 /* ViewController.swift in Sources */,
+				571120AD22592D34008EAE66 /* CoreDataManager.swift in Sources */,
 				571120AA2257F245008EAE66 /* TableViewCell.swift in Sources */,
 				571120582255706D008EAE66 /* Movs_Test.xcdatamodeld in Sources */,
 				571120A72257915A008EAE66 /* MovFavoriteCore.swift in Sources */,
