@@ -10,16 +10,12 @@ import Foundation
 import UIKit
 import CoreData
 class VCFavorites: UIViewController,UITableViewDataSource ,UITableViewDelegate {
-    
+    let pathWebpicture = "http://image.tmdb.org/t/p/w500"
     @IBOutlet weak var tableView: UITableView!
     private var favoritos = [itemsCore]()
-    //var favoritos = [MovFavorites]()
-   //private var favoritos: Array<String> = Array()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-         //GoLoadCoreData()
-       updateData()
+        updateData()
         print(" favoritos " + String(favoritos.count))
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -41,6 +37,20 @@ class VCFavorites: UIViewController,UITableViewDataSource ,UITableViewDelegate {
         cell.textTitle.text = favoritos[indexPath.row].title
         cell.textDescp.text =   favoritos[indexPath.row].overview
         cell.textDate.text =  favoritos[indexPath.row].releasedate
+        
+        let paths = String(self.pathWebpicture) + favoritos[indexPath.row].posterpath!
+        if let imageURL = URL(string:paths) {
+            print(imageURL)
+            
+                let data = try? Data(contentsOf: imageURL)
+                if let data = data {
+                    let image = UIImage(data: data)
+                   
+                        cell.imageViewCell.image = image
+                    
+                }
+            
+        }
         
         return cell
     }
@@ -70,30 +80,11 @@ class VCFavorites: UIViewController,UITableViewDataSource ,UITableViewDelegate {
     @IBAction func BtnRemover(_ sender: Any) {
         
     }
-    func GoLoadCoreData()
-    {
-       // var favoritos = [MovFavorites]()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let contexts = appDelegate.persistentContainer.viewContext
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "MovFavorites")
-        //request.predicate = NSPredicate(format: "age = %@", "12")
-        request.returnsObjectsAsFaults = false
-        
-        do {
-            let result = try contexts.fetch(request)
-            for data in result as! [NSManagedObject] {
-                // print(data.value(forKey: "id"))
-                // print(data.value(forKey: "title") as! String)
-            }
-            self.tableView.reloadData()
-        } catch {
-            print("Failed")
-        }
-    }
+    
    func GoToRemover()
    {
     
-     GoLoadCoreData()
+        updateData()
    }
     
 }
