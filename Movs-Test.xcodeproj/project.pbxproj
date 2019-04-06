@@ -31,6 +31,8 @@
 		571120A22256CA45008EAE66 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120982256CA45008EAE66 /* 2.jpg */; };
 		571120A32256CA45008EAE66 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 571120992256CA45008EAE66 /* 10.jpg */; };
 		571120A52256CE6A008EAE66 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120A42256CE6A008EAE66 /* myCell.swift */; };
+		571120A72257915A008EAE66 /* MovFavoriteCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120A62257915A008EAE66 /* MovFavoriteCore.swift */; };
+		571120AA2257F245008EAE66 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120A92257F245008EAE66 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		571120982256CA45008EAE66 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		571120992256CA45008EAE66 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		571120A42256CE6A008EAE66 /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
+		571120A62257915A008EAE66 /* MovFavoriteCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovFavoriteCore.swift; sourceTree = "<group>"; };
+		571120A92257F245008EAE66 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +140,6 @@
 				571120812255B488008EAE66 /* Controllers */,
 				571120802255B47B008EAE66 /* Provider */,
 				5711204F2255706D008EAE66 /* AppDelegate.swift */,
-				571120512255706D008EAE66 /* ViewController.swift */,
 				571120532255706D008EAE66 /* Main.storyboard */,
 				5711205922557070008EAE66 /* Assets.xcassets */,
 				5711205B22557070008EAE66 /* LaunchScreen.storyboard */,
@@ -174,10 +177,8 @@
 		571120812255B488008EAE66 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				571120852255B552008EAE66 /* VCFavorites.swift */,
-				5711208B2256A7C8008EAE66 /* VCMovies.swift */,
-				5711208D2256ADA7008EAE66 /* VCDetailMovs.swift */,
-				571120A42256CE6A008EAE66 /* myCell.swift */,
+				571120AB2257F252008EAE66 /* Movies */,
+				571120A82257F1E6008EAE66 /* Favorites */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +188,7 @@
 			children = (
 				571120872255B6DD008EAE66 /* Movies.swift */,
 				571120892255B73F008EAE66 /* Results.swift */,
+				571120A62257915A008EAE66 /* MovFavoriteCore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,6 +208,26 @@
 				571120992256CA45008EAE66 /* 10.jpg */,
 			);
 			path = pictures;
+			sourceTree = "<group>";
+		};
+		571120A82257F1E6008EAE66 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				571120852255B552008EAE66 /* VCFavorites.swift */,
+				571120A92257F245008EAE66 /* TableViewCell.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		571120AB2257F252008EAE66 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				5711208B2256A7C8008EAE66 /* VCMovies.swift */,
+				5711208D2256ADA7008EAE66 /* VCDetailMovs.swift */,
+				571120A42256CE6A008EAE66 /* myCell.swift */,
+				571120512255706D008EAE66 /* ViewController.swift */,
+			);
+			path = Movies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +377,9 @@
 				571120882255B6DD008EAE66 /* Movies.swift in Sources */,
 				571120862255B552008EAE66 /* VCFavorites.swift in Sources */,
 				571120522255706D008EAE66 /* ViewController.swift in Sources */,
+				571120AA2257F245008EAE66 /* TableViewCell.swift in Sources */,
 				571120582255706D008EAE66 /* Movs_Test.xcdatamodeld in Sources */,
+				571120A72257915A008EAE66 /* MovFavoriteCore.swift in Sources */,
 				5711208E2256ADA7008EAE66 /* VCDetailMovs.swift in Sources */,
 				571120502255706D008EAE66 /* AppDelegate.swift in Sources */,
 			);

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreData
+import Foundation
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var myCollectionView: UICollectionView!
@@ -15,7 +17,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //SaveData()
        self.myCollectionView.dataSource = self
        self.myCollectionView.delegate = self
         let itemSize = UIScreen.main.bounds.width/3 - 2
@@ -43,6 +45,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         cell.imageViewMov.image = UIImage(named: array[indexPath.row] + ".jpg")
         return cell
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let padding: CGFloat =  50
+        let collectionViewSize = collectionView.frame.size.width - padding
+        
+        return CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
+    }
+    
+    // Funciones
     func GoToLoadMovies()
     {
         
@@ -51,5 +61,33 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     {
         
     }
+    func DeleteFavorite()
+    {
+        
+    }
+    func SaveData()
+     {
+       if ( MovFavoriteCore().saveDataToCoreData(
+          votecount: 474,
+          id: 329996,
+          video: false,
+          voteaverage: 6.8,
+          title: "Dumbo",
+          popularity: 257.98,
+          posterpath: "/ttN0czDnCpr64aj3ANGEf3DKE1L.jpg",
+          originallanguage: "en",
+          originaltitle: "Dumbo",
+         // genreids: [28,12,878],
+          backdroppath: "/tz27bm8LAqK0SlX8TwXrtS9OiBB.jpg",
+          adult: false,
+          overview: "A young elephant, whose oversized ears enable him to fly, helps save a struggling circus, but when the circus plans a new venture, Dumbo and his friends discover dark secrets beneath its shiny veneer.",
+          releasedate: "2019-03-27") == true )
+       {
+        
+        }else{
+        
+        }
+    }
+    
 }
 
