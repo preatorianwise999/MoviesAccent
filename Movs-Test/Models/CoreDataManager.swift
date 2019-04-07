@@ -174,7 +174,23 @@ class CoreDataManager: NSObject {
         
         return aray
     }
-    
+    class func deleteItemCore(withID:Int32)
+    {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let contexts = appDelegate.persistentContainer.viewContext
+        //let entitys = NSEntityDescription.entity(forEntityName: "MovFavorites", in: contexts)
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "MovFavorites")
+        request.predicate = NSPredicate(format: "id==\(withID)")
+        do {
+            let objects = try contexts.fetch(request)
+            for object in objects {
+                contexts.delete(object as! NSManagedObject)
+            }
+            try contexts.save()
+        } catch _ {
+            // error handling
+        }
+    }
     ///delete all the data in core data
     class func cleanCoreDataAll() {
         

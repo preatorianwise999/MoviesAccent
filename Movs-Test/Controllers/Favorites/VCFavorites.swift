@@ -15,6 +15,7 @@ class VCFavorites: UIViewController,UITableViewDataSource ,UITableViewDelegate {
     private var favoritos = [itemsCore]()
     override func viewDidLoad() {
         super.viewDidLoad()
+       // SaveData()
         updateData()
         print(" favoritos " + String(favoritos.count))
         self.tableView.dataSource = self
@@ -57,25 +58,27 @@ class VCFavorites: UIViewController,UITableViewDataSource ,UITableViewDelegate {
         if editingStyle == UITableViewCellEditingStyle.delete
         {
             favoritos.remove(at: indexPath.row)
+            CoreDataManager.deleteItemCore(withID: favoritos[indexPath.row].id!)
+            updateData()
             tableView.reloadData()
         }
     }
     func SaveData()
     {
         if ( MovFavoriteCore().saveDataToCoreData(
-            votecount: 474,
-            id: 329996,
+            votecount: 659,
+            id: 458723,
             video: false,
             voteaverage: 6.8,
-            title: "Dumbo",
+            title: "Us",
             popularity: 257.98,
-            posterpath: "/ttN0czDnCpr64aj3ANGEf3DKE1L.jpg",
+            posterpath: "/ux2dU1jQ2ACIMShzB3yP93Udpzc.jpg",
             originallanguage: "en",
-            originaltitle: "Dumbo",
+            originaltitle: "Us",
             // genreids: [28,12,878],
-            backdroppath: "/tz27bm8LAqK0SlX8TwXrtS9OiBB.jpg",
+            backdroppath: "/ADJ6V8W96It4KElY2SPZvkKPBR.jpg",
             adult: false,
-            overview: "A young elephant, whose oversized ears enable him to fly, helps save a struggling circus, but when the circus plans a new venture, Dumbo and his friends discover dark secrets beneath its shiny veneer.",
+            overview: "Husband and wife Gabe and Adelaide Wilson take their kids to their beach house expecting to unplug and unwind with friends. But as night descends, their serenity turns to tension and chaos when some shocking visitors arrive uninvited.",
             releasedate: "2019-03-27") == true )
         {
             
