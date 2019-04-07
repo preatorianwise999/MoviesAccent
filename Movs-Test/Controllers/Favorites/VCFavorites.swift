@@ -20,7 +20,6 @@ class VCFavorites: UIViewController,UITableViewDataSource ,UITableViewDelegate {
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -34,6 +33,8 @@ class VCFavorites: UIViewController,UITableViewDataSource ,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? TableViewCell else { return UITableViewCell() }
         
+        let calendar = Calendar.current
+        
         cell.textTitle.text = favoritos[indexPath.row].title
         cell.textDescp.text =   favoritos[indexPath.row].overview
         cell.textDate.text =  favoritos[indexPath.row].releasedate
@@ -41,18 +42,23 @@ class VCFavorites: UIViewController,UITableViewDataSource ,UITableViewDelegate {
         let paths = String(self.pathWebpicture) + favoritos[indexPath.row].posterpath!
         if let imageURL = URL(string:paths) {
             print(imageURL)
-            
                 let data = try? Data(contentsOf: imageURL)
                 if let data = data {
                     let image = UIImage(data: data)
                    
                         cell.imageViewCell.image = image
-                    
                 }
-            
         }
         
         return cell
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
+        if editingStyle == UITableViewCellEditingStyle.delete
+        {
+            favoritos.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
     }
     func SaveData()
     {

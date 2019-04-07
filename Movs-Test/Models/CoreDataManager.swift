@@ -174,5 +174,21 @@ class CoreDataManager: NSObject {
         
         return aray
     }
+    
+    ///delete all the data in core data
+    class func cleanCoreDataAll() {
+        
+        let fetchRequest:NSFetchRequest<MovFavorites> = MovFavorites.fetchRequest()
+        
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest as! NSFetchRequest<NSFetchRequestResult>)
+        
+        do {
+            print("deleting all contents")
+            try getContext().execute(deleteRequest)
+        }catch {
+            print(error.localizedDescription)
+        }
+        
+    }
 
 }
