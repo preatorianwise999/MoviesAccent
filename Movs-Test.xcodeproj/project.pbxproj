@@ -34,6 +34,7 @@
 		571120A72257915A008EAE66 /* MovFavoriteCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120A62257915A008EAE66 /* MovFavoriteCore.swift */; };
 		571120AA2257F245008EAE66 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120A92257F245008EAE66 /* TableViewCell.swift */; };
 		571120AD22592D34008EAE66 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120AC22592D34008EAE66 /* CoreDataManager.swift */; };
+		571120B0225A7F2B008EAE66 /* ApiMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571120AF225A7F2B008EAE66 /* ApiMovies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		571120A62257915A008EAE66 /* MovFavoriteCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovFavoriteCore.swift; sourceTree = "<group>"; };
 		571120A92257F245008EAE66 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		571120AC22592D34008EAE66 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		571120AF225A7F2B008EAE66 /* ApiMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMovies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		571120802255B47B008EAE66 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				571120AF225A7F2B008EAE66 /* ApiMovies.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -225,12 +228,20 @@
 		571120AB2257F252008EAE66 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				571120AE2259C3A5008EAE66 /* New Group */,
 				5711208B2256A7C8008EAE66 /* VCMovies.swift */,
 				5711208D2256ADA7008EAE66 /* VCDetailMovs.swift */,
 				571120A42256CE6A008EAE66 /* myCell.swift */,
 				571120512255706D008EAE66 /* ViewController.swift */,
 			);
 			path = Movies;
+			sourceTree = "<group>";
+		};
+		571120AE2259C3A5008EAE66 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				571120B0225A7F2B008EAE66 /* ApiMovies.swift in Sources */,
 				5711208C2256A7C8008EAE66 /* VCMovies.swift in Sources */,
 				571120A52256CE6A008EAE66 /* myCell.swift in Sources */,
 				5711208A2255B73F008EAE66 /* Results.swift in Sources */,

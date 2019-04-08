@@ -20,13 +20,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         //SaveData()
        self.myCollectionView.dataSource = self
        self.myCollectionView.delegate = self
-        let itemSize = UIScreen.main.bounds.width/3 - 2
+      /*  let itemSize = UIScreen.main.bounds.width/3 - 2
         
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: itemSize, height: itemSize)
         layout.minimumInteritemSpacing = 2
         layout.minimumLineSpacing = 2
-        myCollectionView.collectionViewLayout = layout
+        myCollectionView.collectionViewLayout = layout*/
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,16 +42,16 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! myCell
+        cell.titleMov.text = "Movie"
         cell.imageViewMov.image = UIImage(named: array[indexPath.row] + ".jpg")
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    /*func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let padding: CGFloat =  50
         let collectionViewSize = collectionView.frame.size.width - padding
-        
         return CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
-    }
-    
+    }*/
+
     // Funciones
     func GoToLoadMovies()
     {
@@ -88,6 +88,5 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         }
     }
-    
 }
 

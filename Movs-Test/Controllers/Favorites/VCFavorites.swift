@@ -10,9 +10,11 @@ import Foundation
 import UIKit
 import CoreData
 class VCFavorites: UIViewController,UITableViewDataSource ,UITableViewDelegate {
+    
     let pathWebpicture = "http://image.tmdb.org/t/p/w500"
     @IBOutlet weak var tableView: UITableView!
     private var favoritos = [itemsCore]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        // SaveData()
@@ -46,7 +48,6 @@ class VCFavorites: UIViewController,UITableViewDataSource ,UITableViewDelegate {
                 let data = try? Data(contentsOf: imageURL)
                 if let data = data {
                     let image = UIImage(data: data)
-                   
                         cell.imageViewCell.image = image
                 }
         }

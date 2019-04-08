@@ -259,37 +259,50 @@
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k7p-sy-i52">
                                 <rect key="frame" x="0.0" y="127" width="375" height="491"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gMA-t1-977">
-                                    <size key="itemSize" width="170" height="250"/>
+                                    <size key="itemSize" width="192" height="270"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="IeS-jK-SjF" customClass="myCell" customModule="Movs_Test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="170" height="250"/>
+                                        <rect key="frame" x="91.5" y="0.0" width="192" height="270"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="170" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="192" height="270"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP9-d1-QDo">
-                                                    <rect key="frame" x="8" y="199" width="110" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP9-d1-QDo">
+                                                    <rect key="frame" x="8" y="199" width="110" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="0Tg-Iu-ale"/>
+                                                        <constraint firstAttribute="width" constant="110" id="dFG-YL-mfx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="elE-CG-fIG">
-                                                    <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="elE-CG-fIG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="NF8-bi-zBn"/>
+                                                        <constraint firstAttribute="width" constant="150" id="lBq-24-GvR"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="elE-CG-fIG" firstAttribute="top" secondItem="IeS-jK-SjF" secondAttribute="top" id="XZC-fB-uW6"/>
-                                            <constraint firstItem="EP9-d1-QDo" firstAttribute="top" secondItem="elE-CG-fIG" secondAttribute="bottom" constant="29" id="YrJ-0A-2y7"/>
-                                            <constraint firstItem="elE-CG-fIG" firstAttribute="leading" secondItem="IeS-jK-SjF" secondAttribute="leading" id="jir-Yf-vof"/>
-                                            <constraint firstAttribute="trailing" secondItem="elE-CG-fIG" secondAttribute="trailing" id="jsa-8d-Gqs"/>
+                                            <constraint firstItem="EP9-d1-QDo" firstAttribute="leading" secondItem="IeS-jK-SjF" secondAttribute="leadingMargin" id="JkD-CE-UrT"/>
+                                            <constraint firstItem="elE-CG-fIG" firstAttribute="top" secondItem="IeS-jK-SjF" secondAttribute="top" id="So5-rX-nbP"/>
+                                            <constraint firstItem="EP9-d1-QDo" firstAttribute="top" secondItem="elE-CG-fIG" secondAttribute="bottom" constant="49" id="aqh-vd-yha"/>
+                                            <constraint firstAttribute="trailing" secondItem="elE-CG-fIG" secondAttribute="trailing" id="bqt-0V-WNH"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="EP9-d1-QDo" secondAttribute="bottom" constant="43" id="ivp-yn-4vk"/>
+                                            <constraint firstItem="elE-CG-fIG" firstAttribute="leading" secondItem="IeS-jK-SjF" secondAttribute="leading" id="rW7-uD-blf"/>
+                                            <constraint firstItem="EP9-d1-QDo" firstAttribute="top" secondItem="elE-CG-fIG" secondAttribute="bottom" constant="49" id="ue2-aA-4O5"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="EP9-d1-QDo" secondAttribute="trailing" constant="24" id="zFC-fq-niN"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imageViewMov" destination="elE-CG-fIG" id="bVv-F1-cAv"/>
