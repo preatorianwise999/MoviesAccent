@@ -51,20 +51,23 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let collectionViewSize = collectionView.frame.size.width - padding
         return CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
     }*/
-
+   /*
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("deberia abrir VCDetailsPopular")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "VCDetailMovs") as! VCDetailsPopular
+        controller.nameString = String(peliculas[indexPath.row].title)
+        controller.decripString = peliculas[indexPath.row].overview
+        controller.imageString = String(self.pathWebpicture) + String(peliculas[indexPath.row].poster_path)
+        self.present(controller, animated: true, completion: nil)
+        
+    }*/
     // Funciones
     func GoToLoadMovies()
     {
         
     }
-    func GoToDetailMovie()
-    {
-        
-    }
-    func DeleteFavorite()
-    {
-        
-    }
+    
     func SaveData()
      {
        if ( MovFavoriteCore().saveDataToCoreData(
